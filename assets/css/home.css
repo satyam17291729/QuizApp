@@ -1,0 +1,30 @@
+#main-container{
+    height: 87.2vh;
+    background-color: gray;
+}
+#main-section{
+    height: 87.2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#greet{
+    text-decoration: underline;
+    margin: 0px 0px 100px 0px;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd33;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f218;
+}

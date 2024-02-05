@@ -3,21 +3,39 @@
     <nav id="nav-container">
         <h2 id="logo">QTEST</h2>
         <ul id="nav-items">
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/users/about">AboutUs</a>
-            </li>
-            <li>
-                <a href="/users/test">Test</a>
-            </li>
-            <li>
-                <a href="/users/signup">SignUp</a>
-            </li>
-            <li>
-                <a href="/users/signin">SignIn</a>
-            </li>
+
+           
+
+            <%if(locals.email){%>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/users/about">AboutUs</a>
+                </li>
+                <li>
+                    <a href="/users/test">Test</a>
+                </li>
+                <li>
+                    <a href="/users/logout">Logout</a>
+                </li>
+                <% }else{%>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/users/about">AboutUs</a>
+                    </li>
+                    <li>
+                        <a href="/users/test">Test</a>
+                    </li>
+                    <li>
+                        <a href="/users/signup">SignUp</a>
+                    </li>
+                    <li>
+                        <a href="/users/signin">SignIn</a>
+                    </li>
+                    <% }%>
         </ul>
     </nav>
 </header>

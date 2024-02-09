@@ -17,6 +17,7 @@ app.use(expressSession({
 }))
 
 //it parse the form data
+ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 //setting the app level middleware for static file

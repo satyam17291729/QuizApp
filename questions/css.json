@@ -1,0 +1,72 @@
+[
+    {
+        "id":1,
+        "question":"What is the full form of CSS",
+        "answer":"Cascading Style Sheets",
+        "options":["Cascading Style Set","Cascading Style Sheets","Cascading Styling Sheets","Cascading Styling Set"]
+    },
+
+    {
+        "id":2,
+        "question":"Which of the following tag is used to embed css in html page?",
+        "answer":" <style>",
+        "options":["<css>","<!DOCTYPE html>","<script>","<style>"]
+    },
+
+    {
+        "id":3,
+        "question":"Which of the following CSS selectors are used to specify a group of elements?",
+        "answer":"class",
+        "options":["tag","id","class","class and tag"]
+    },
+
+    {
+        "id":4,
+        "question":" Which of the following is the correct syntax to link an external style sheet in the HTML file?",
+        "answer":"<link rel=”stylesheet” href=”style.css” />",
+        "options":["<link rel=”stylesheet” href=”style.css” />","<link rel=”stylesheet” src=”style.css” />","<style rel=”stylesheet” src=”style.css” />","<style rel=”stylesheet” link=”style.css” />"]
+    },
+
+    {
+        "id":5,
+        "question":"Which of the following CSS property specifies the look and design of an outline?",
+        "answer":"outline-style",
+        "options":["outline-style","outline-format","outline-font","none of the mentioned"]
+    },
+
+    {
+        "id":6,
+        "question":"Which of the following CSS selector is used to specify a rule to bind a particular unique element?",
+        "answer":"id",
+        "options":["tag","id","class","class and tag"]
+    },
+
+    {
+        "id":7,
+        "question":"Which of the following CSS property is used to set the color of the text?",
+        "answer":"color",
+        "options":["text-decoration","pallet","colour","color"]
+    },
+
+    {
+        "id":8,
+        "question":"Which of the following CSS Property controls how an element is positioned?",
+        "answer":"position",
+        "options":["static","fix","position","set"]
+    },
+
+    {
+        "id":9,
+        "question":"Which of the following is an appropriate value for the overflow element?",
+        "answer":"all of the mentioned",
+        "options":["scroll","hidden","auto","all of the mentioned"]
+    },
+
+    {
+        "id":10,
+        "question":"Which of the following CSS property defines the space between cells in a table?",
+        "answer":"border-spacing",
+        "options":["border-spacing","border-style","border","all of the mentioned"]
+    }
+
+]

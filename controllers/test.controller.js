@@ -15,11 +15,12 @@ class Test{
         }
     }
      static quizQuestion;
+     static nameOfSub;
     test=async(req,res)=>{
         // await this.createQuestion("what is html","hypertext markup language",[]);
         // console.log(req.params.name);
-        
-        const str=`QuestionsOf${req.params.name}`;
+        Test.nameOfSub=req.params.name
+         const str=`QuestionsOf${req.params.name}`;
         // console.log(str==="QuestionsOfHtml")
         if(str==="QuestionsOfHtml"){
              Test.quizQuestion= await QuestionsOfHtml.find({});

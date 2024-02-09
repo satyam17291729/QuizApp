@@ -1,8 +1,107 @@
 [
     {
-        "id":1,
-        "question":"What is the full form of HTML",
-        "answer":"Hyper Test MarkUp Language",
-        "options":[]
+      "question": "What does HTML stand for?",
+      "answer": "HyperText Markup Language",
+      "options": [
+        "HyperText Markup Language",
+        "Hyperlinks and Text Markup Language",
+        "Home Tool Markup Language",
+        "Hyper Tool Markup Language"
+      ]
+    },
+    
+    {
+      "question": "Which of the following is a semantic element in HTML?",
+      "answer": "article",
+      "options": [
+        "div",
+        "span",
+        "article",
+        "section"
+      ]
+    },
+    {
+      "question": "Which tag is used for creating a hyperlink in HTML?",
+      "answer": "<a>",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<hyperlink>"
+      ]
+    },
+    {
+      "question": "What is the correct HTML element for the largest heading?",
+      "answer": "<h1>",
+      "options": [
+        "<heading>",
+        "<h6>",
+        "<h1>",
+        "<head>"
+      ]
+    },
+    {
+      "question": "Which HTML element is used to define navigation links?",
+      "answer": "<nav>",
+      "options": [
+        "<navigation>",
+        "<nav>",
+        "<navbar>",
+        "<links>"
+      ]
+    },
+    {
+      "question": "Which attribute is used to specify that an input field must be filled out?",
+      "answer": "required",
+      "options": [
+        "validate",
+        "mandatory",
+        "required",
+        "complete"
+      ]
+    },
+    {
+      "question": "Which HTML element defines the title of a document?",
+      "answer": "<title>",
+      "options": [
+        "<head>",
+        "<title>",
+        "<meta>",
+        "<document>"
+      ]
+    },
+    {
+      "question": "What does the 'alt' attribute in the <img> tag specify?",
+      "answer": "Alternative text for an image",
+      "options": [
+        "Alignment of the image",
+        "Alternative text for an image",
+        "Alternate source for the image",
+        "Animation effect for the image"
+      ]
+    },
+    {
+      "question": "Which element is used to specify a footer in HTML5?",
+      "answer": "<footer>",
+      "options": [
+        "<footer>",
+        "<bottom>",
+        "<end>",
+        "<section>"
+      ]
+    },
+    {
+      "question": "What is the correct HTML for making a checkbox?",
+      "answer": "<input type='checkbox'>",
+      "options": [
+        "<input type='checkbox'>",
+        "<checkbox>",
+        "<check>",
+        "<input type='check'>"
+      ]
     }
 ]
+  
+  
+  
+  

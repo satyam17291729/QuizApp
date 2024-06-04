@@ -1,4 +1,6 @@
 import User from "../models/users.js"
+
+import bcrypt from "bcryptjs";
 class UserController {
     //rendering the about section
     aboutView(req, res) {
@@ -21,10 +23,11 @@ class UserController {
 
                 return res.redirect("/users/signin");
             }
+            const hashedPassword = await bcrypt.hash(password, 10);
             const data = new User({
                 name: name,
                 email: email,
-                password: password
+                password: hashedPassword
             })
             await data.save();
         } catch (err) {
@@ -36,22 +39,41 @@ class UserController {
 
     //login
     async login(req, res) {
-        const { email, password } = req.body;
-        try {
-            const isExist = await User.findOne({email: email, password: password});
-            // console.log(isExist);
-            if (isExist) {
-                console.log("successfully login");
-                req.session.email=email;
-                // console.log(req.session);
-                res.redirect("/");
-            }else{
-                res.redirect("/users/signin")
-            }
+        // const { email, password } = req.body;
+        // try {
+        //     const isExist = await User.findOne({email: email, password: password});
+            
+        //     if (isExist) {
+        //         console.log("successfully login");
+        //         req.session.email=email;
+        //         res.redirect("/");
+        //     }else{
+        //         res.redirect("/users/signin")
+        //     }
            
-        } catch (err) {
-            console.log("something went wrong in finding data in database");
+        // } catch (err) {
+        //     console.log("something went wrong in finding data in database");
+        // }
+
+        const { email, password } = req.body;
+    try {
+        const user = await User.findOne({ email: email });
+        if (user) {
+            const isMatch = await bcrypt.compare(password, user.password);
+            if (isMatch) {
+                console.log("successfully login");
+                req.session.email = email;
+                res.redirect("/");
+            } else {
+                res.redirect("/users/signin");
+            }
+        } else {
+            res.redirect("/users/signin");
         }
+    } catch (err) {
+        console.log("something went wrong in finding data in database", err);
+        res.status(500).send("Internal Server Error");
+    }
 
     }
 

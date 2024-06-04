@@ -16,7 +16,7 @@ class UserController {
     async createUser(req, res) {
         const { name, email, password } = req.body;
         try {
-            const isExist = await User.find({ email: email });
+            const isExist = await User.findOne({ email: email });
             if (isExist) {
 
                 return res.redirect("/users/signin");
@@ -38,9 +38,9 @@ class UserController {
     async login(req, res) {
         const { email, password } = req.body;
         try {
-            const isExist = await User.find({email: email, password: password});
+            const isExist = await User.findOne({email: email, password: password});
             // console.log(isExist);
-            if (isExist.length>0) {
+            if (isExist) {
                 console.log("successfully login");
                 req.session.email=email;
                 // console.log(req.session);
